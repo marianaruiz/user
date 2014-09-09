@@ -30,8 +30,8 @@ public class javamail {
             props.setProperty("mail.smtp.port", "587");
             props.setProperty("mail.smtp.user","pruebasweb99@gmail.com");
             props.setProperty("mail.smtp.auth", "true");
-           // props.put("mail.smtp.ssl.trust", "smtp.gmail.com");
-            props.setProperty("mail.smtp.ssl.trust", "smtpserver");
+            // props.put("mail.smtp.ssl.trust", "smtp.gmail.com");
+           // props.setProperty("mail.smtp.ssl.trust", "smtpserver");
             //iniciar la sesion
             Session session=Session.getDefaultInstance(props);
             /*,
@@ -40,7 +40,7 @@ public class javamail {
                         return new PasswordAuthentication("pruebasweb99@gmail.com","pruebasweb");
                     }
                 });*/
-            Message message = new MimeMessage(session);
+            MimeMessage message = new MimeMessage(session);
             message.setFrom(new InternetAddress("pruebasweb99@gmail.com"));
             //InternetAddress[] para={new InternetAddress(correoDestinatario)};
             message.addRecipient(Message.RecipientType.TO ,new InternetAddress(correoDestinatario));
@@ -56,5 +56,5 @@ public class javamail {
             e.printStackTrace();
         }
     }
-    
+   
 }

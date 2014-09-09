@@ -41,9 +41,9 @@ try {
 
     // el mensaje
     MimeMessage message = new MimeMessage(session);
-    message.setFrom(new InternetAddress(" pruebasweb99@gmail.com"));
+    message.setFrom(new InternetAddress("pruebasweb99@gmail.com"));
     message.addRecipient(Message.RecipientType.TO,new InternetAddress(correoDestinatario));
-    message.addRecipient(Message.RecipientType.BCC,new InternetAddress(" pruebasweb99@gmail.com"));
+    message.addRecipient(Message.RecipientType.BCC,new InternetAddress("pruebasweb99@gmail.com"));
     //CC A quien s ele envia una copia Oculta
     //BCC A quien s ele envia una copia Oculta
 
@@ -61,11 +61,11 @@ try {
     
   }
     
-    public static void main (String args[]) throws MessagingException
+    /*public static void main (String args[]) throws MessagingException
     {
         Mail m = new Mail();
-        m.enviarMail("jav810@hotmail.com", "hola", "hola");
-    }
+        m.enviarMail("marian.ayo@hotmail.com", "hola", "hola");
+    }*/
     
 
 }
