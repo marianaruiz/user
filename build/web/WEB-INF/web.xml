@@ -8,6 +8,10 @@
         <servlet-name>Actualizaru</servlet-name>
         <servlet-class>paquete.un.ser.Actualizaru</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>grafica_ser</servlet-name>
+        <servlet-class>paquete.un.ser.grafica_ser</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>VerTodos</servlet-name>
         <url-pattern>/VerTodos</url-pattern>
@@ -15,6 +19,10 @@
     <servlet-mapping>
         <servlet-name>Actualizaru</servlet-name>
         <url-pattern>/Actualizaru</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>grafica_ser</servlet-name>
+        <url-pattern>/grafica_ser</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
