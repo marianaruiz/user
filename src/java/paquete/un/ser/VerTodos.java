@@ -99,6 +99,7 @@ public class VerTodos extends HttpServlet {
             }
             pagina +="<table>";
             pagina+="<FORM METHOD=\"LINK\" ACTION=\"newUsuario.html\"> <INPUT TYPE=\"submit\" VALUE=\"Agregar Usuario\"> </FORM>";
+            pagina+="<a href=\"grafica_ser\">Ver Grafica</a>";
             pagina +="</body>";
             pagina +="</html>";
             

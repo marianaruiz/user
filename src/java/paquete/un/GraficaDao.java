@@ -61,7 +61,7 @@ public class GraficaDao {
             while(rs.next()){
             Grafica grafica =new Grafica();
             grafica.setCantidad(Integer.parseInt(rs.getString("Alumnos")));
-            grafica.setNombre(rs.getString("carrera"));
+            grafica.setNombre(rs.getString("carreras"));
             lista.add(grafica);
             }
             }
