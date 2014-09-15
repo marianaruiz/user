@@ -19,7 +19,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import paquete.un.Usuario;
 import paquete.un.UsuarioDAO;
-import paquete.un.javamail;
+
 
 /**
  *
@@ -63,7 +63,7 @@ public class serverletusuario extends HttpServlet {
             udao.create(u);
             //enviar mail ce registro
             //Mail mail = new Mail();
-            javamail mail =new javamail();
+            Mail mail =new Mail();
             String asunto="Registro";
             String texto="Confirmación de Registro-Exitoso";
             //texto+="Datos Personales:<br>";
@@ -75,7 +75,7 @@ public class serverletusuario extends HttpServlet {
             texto+="Contraseña:";
             texto+=request.getParameter("clavedeusuario");*/
             //mail.enviarMail(request.getParameter("email"), asunto, texto);
-            mail.enviarmail(request.getParameter("email"), asunto, texto);
+            mail.enviarMail(request.getParameter("email"), asunto, texto);
                     
              response.sendRedirect("/user/index.html");
         }

@@ -51,7 +51,7 @@ public class grafica_ser extends HttpServlet {
             out.println("<title>Servlet grafica_ser</title>");            
             out.println("</head>");
             out.println("<body>");  
-            out.println("<h1>Servlet grafica_ser at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Grafica GEnerada con Jfrechart</h1>");
             out.print("<img src='grafica2.png'></img>");
             out.println("</body>");
             out.println("</html>");

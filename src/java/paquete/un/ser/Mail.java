@@ -51,7 +51,7 @@ try {
     message.setText(textoCorreo);
     // envio MEnsaje.
     Transport trasporte = session.getTransport("smtp");
-    trasporte.connect("pruebasweb99@gmail.com","pruebasweb");
+    trasporte.connect("pruebasweb99.com","pruebasweb");
     trasporte.sendMessage(message, message.getAllRecipients());
     // Cierre.
     trasporte.close();
